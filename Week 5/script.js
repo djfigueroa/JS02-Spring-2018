@@ -1,1 +1,0 @@
-$("span").html("Do you like Shrek too?");
