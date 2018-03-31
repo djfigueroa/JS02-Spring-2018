@@ -1,0 +1,10 @@
+p {
+	color: red;
+	font-family: 'Lobster', cursive;
+	text-align: center;
+	font-size: 200%;
+}
+
+body {
+	background-color: rgb(102, 255, 255);
+}

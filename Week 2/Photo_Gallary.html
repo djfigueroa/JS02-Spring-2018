@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js">
+	</script>
+	<link rel="stylesheet" type="text/css" href="Photo_Gallary.css">
+</head>
+	<body>
+		<center><img src="https://i.stack.imgur.com/xDoyU.png" id="box" width="500" height="500"></center>
+		<img src="https://tinyurl.com/yb8glmub" id="Spongebob"  width="295" height="300">
+		<img src="https://tinyurl.com/y9tb87qt" id="OddSquad" width="295" height="300">
+		<img src="https://lumiere-a.akamaihd.net/v1/images/navigation_littleeinsteins_disneyjunior_832df03e.png?region=0%2C0%2C225%2C225" id="Einsteins"  width="295" height="300">
+		<img src="https://tinyurl.com/y9fxhs8a" id="avatar" width="295" height="300">
+		<img src="https://tinyurl.com/y74ax39m" id="shenron" width="295" height="300">
+		<script>
+			$("#Spongebob").on("click", () => {
+  				document.getElementById("box").src = "https://tinyurl.com/yb8glmub";
+			});
+			$("#OddSquad").on("click", () => {
+  				document.getElementById("box").src = "https://tinyurl.com/y9tb87qt";
+			});
+			$("#Einsteins").on("click", () => {
+  				document.getElementById("box").src = "https://lumiere-a.akamaihd.net/v1/images/navigation_littleeinsteins_disneyjunior_832df03e.png?region=0%2C0%2C225%2C225";
+  			});
+  			$("#avatar").on("click", () => {
+  				document.getElementById("box").src = "https://tinyurl.com/y9fxhs8a";
+  			});
+  			$("#shenron").on("click", () => {
+  				document.getElementById("box").src = "https://tinyurl.com/y74ax39m";
+  			});
+ 		</script>
+	</body>
+</html>
