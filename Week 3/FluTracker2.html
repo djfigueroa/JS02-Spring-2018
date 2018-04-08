@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+</head>
+<body>
+    Student Name: <input type="text" name="Student_Name" id="StudentName">
+    Temperature: <input type="text" name="Temperature" id="Temperature">
+    <button>Add Student</button>
+    <ul>
+        <lh>Healthy Students</lh>
+        <li id="healthy"></li>
+    </ul>
+    <ul>
+        <lh>Unhealthy Students</lh>
+        <li id="unhealthy"></li>
+    </ul>
+    <script>
+        $("button").click(() => {
+      const name = $("input#StudentName").val();
+      const Temp = $("input#Temperature").val();
+      if (Temp <= 98) {
+        $("#healthy").append(name + "<br>");
+        $("#healthy").css('color', 'green');
+  
+      }
+      if (Temp > 98) {
+        $("#unhealthy").append(name + "<br>");
+        $("#unhealthy").css('color', 'red');
+      }
+    });
+  </script>
+</body>
+</html>
+
