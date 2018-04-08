@@ -10,9 +10,21 @@
 	<script>
 		$("button").click(() => {
       		const ItemName = $("input#grocery").val();
-      		if (ItemName = "Eggs") {
-        		$("p").html("<p>$2.00</p>")
-  			}
+      			if (ItemName == "Eggs") {
+        			$("p").html("<p>$2.00</p>")
+  				}
+  				if (ItemName == "Milk") {
+        			$("p").html("<p>$3.00</p>")
+  				}
+  				if (ItemName == "Banana") {
+        			$("p").html("<p>$1.00</p>")
+  				}
+  				if (ItemName == "Bread") {
+        			$("p").html("<p>$2.50</p>")
+  				}
+  				if (ItemName == "Cheesecake") {
+        			$("p").html("<p>$8.00</p>")
+  				}
       	});
 	</script>
 </body>
