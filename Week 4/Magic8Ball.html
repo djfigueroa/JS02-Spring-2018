@@ -1,0 +1,63 @@
+<html>
+   <head>
+         <script
+    src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js">
+    </script>
+   </head>
+   <body>
+   	<link rel="stylesheet" type="text/css" href="Magic8Ball.css">
+    <link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
+           <center>
+           		<img src = "https://s3.amazonaws.com/lillypiri/blog/8ball/8ball.png" id="8ball"/>
+           	</center>
+       <p></p>
+   </body>
+</html>
+<script>
+
+   const outputs = [
+       "Reply hazy try again"
+       ,
+       "Ask again later"
+       ,
+       "Better not tell you now"
+       ,
+       "Cannot predict now"
+       ,
+       "Concentrate and ask again"
+       ,
+       "It is certain"
+       ,
+       "It is decidedly so"
+       ,
+       "Without a doubt"
+       ,
+       "Yes, definitely"
+       ,
+       "You may rely on it"
+       ,
+       "As I see it, yes"
+       ,
+       "Most likely"
+       ,
+       "Outlook good"
+       ,
+       "Yes"
+       ,
+       "Signs point to yes"
+       ,
+       "Don’t count on it"
+       ,
+       "My reply is no"
+       ,
+       "My sources say no"
+       ,
+       "Outlook not so good"
+       ,
+       "Very doubtful"
+   ]
+    $("#8ball").click(()=>{
+var Answer = outputs[Math.floor(Math.random() * 20)];
+$("p").html("<p>" +  Answer + "</p>")
+   })
+</script>

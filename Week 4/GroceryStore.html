@@ -10,8 +10,13 @@
 	<script>
 		$("button").click(() => {
       		const itemName = $("input#grocery").val();
-      		if (itemName = "Eggs") {
-        		$("p").html("<p>$2.00</p>")
+      		if (itemName == "Eggs") {
+        		return 2.00;
+  			} else if (itemName == "Milk"){
+  				return 3.00;
+  			}
+  			else{
+  				return "NAN";
   			}
       	});
 	</script>
