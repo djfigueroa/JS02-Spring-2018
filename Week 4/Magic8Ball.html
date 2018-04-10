@@ -36,7 +36,7 @@
       "Very doubtful"
   ]
    $("#8ball").click(()=>{
-  var Answer = outputs[Math.floor(Math.random() * 20)];
-  $("p").html("<p>" +  Answer + "</p>")
+  const Answer = outputs[Math.floor(Math.random() * 20)];
+  $("p").html(`<p>${answer}</p>`);
   })
 </script>
