@@ -1,0 +1,49 @@
+
+<!DOCTYPE html>
+<html>
+   <head>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+   </head>
+   <body>
+      <input type="radio" id="radioButtonHeads" name="group_1" align="right">
+      <label for="radioButton">Heads</label>
+      <input type="radio" id="radioButtonTails" name="group_1" align="right">
+      <label for="radioButton">Tails</label>
+      <table class="w3-table-all w3-hoverable" align="right">
+         <h4>Heads:</h4>
+         <p id="heads"></p>
+         <h4>Tails:</h4>
+         <p id="tails"></p>
+         <tr>
+            <th>Points</th>
+         </tr>
+         <tr>
+            <tb id="point">
+            </td>
+         </tr>
+      </table>
+      <button>Heads or Tails</button>
+      <span id="headsTailsImg"/>
+      <script>
+        let points = 0;
+        let counterHeads = 0;
+        let counterTails = 0;
+        $("button").click(()=> {
+        	const headsOrTails = parseInt(Math.random()*2);
+        	// if headOrTails is equal to 0, it shows the heads image and adds 1 to the heads counter. if headsOrTails is equal to anything else, it shows the tails image and adds 1 to the tails counter.
+       		if(headsOrTails == 0){
+            $("span#headsTailsImg").html( "<img src = 'https://lh3.ggpht.com/dCRzHMOlHgJSfiW7iNln-VXqqQWbyj0_5e3Gmp-lP45LKhvavAabKPoQs9ATvsDXRyom=s256'>");
+            counterHeads = counterHeads + 1;
+            document.getElementById("heads").innerHTML = counterHeads;  
+                     
+         	}
+         	else {
+        		$("span#headsTailsImg").html( "<img src = 'https://pbs.twimg.com/profile_images/598707313357131776/1790CegR_400x400.png'>");
+         		counterTails = counterTails + 1;
+         		document.getElementById("tails").innerHTML = counterTails;
+         	} 
+
+        });
+      </script>
+   </body>
+</html>
