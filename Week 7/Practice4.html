@@ -4,10 +4,14 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
     </head>
     <body>
+        <input type="text">
+        <button type="button">Click Me!</button>
         <p>My name is <span id="myName"></span></p>
         <script>
-            const theName = "Shrek";
-            $("span#myName").append(`${theName}`)
+            $("button").click(() => {
+                 const name = $("input").val();
+                 $("span#myName").html(name)
+            });
         </script>
     </body>
-</html
+</html>

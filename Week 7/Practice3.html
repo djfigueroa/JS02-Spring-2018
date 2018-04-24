@@ -5,9 +5,12 @@
     </head>
     <body>
         <p>My name is <span id="myName"></span></p>
+        <button type="button">Click Me!</button>
         <script>
             const theName = "Shrek";
-            $("span#myName").append(`${theName}`)
+            $("button").click(()=>{
+                $("span#myName").html("Shrek")
+            });
         </script>
     </body>
-</html
+</html>

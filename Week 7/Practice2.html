@@ -6,8 +6,13 @@
     <body>
         <p>My name is <span id="myName"></span></p>
         <script>
-            const theName = "Shrek";
-            $("span#myName").append(`${theName}`)
+            const theNumber = parseInt(Math.random() * 2);
+            if (theNumber == 0) {
+            	$("span#myName").html("Shrek")
+            }
+            else {
+            	$("span#myName").html("Princess Fiona")
+            }
         </script>
     </body>
-</html
+</html>
