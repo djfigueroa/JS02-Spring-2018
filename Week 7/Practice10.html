@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+        </head>
+        <body>
+            <h2>List of Characters</h2>
+            <ul id="names">
+            </ul>
+            <p id="Unorder"></p>
+            <button type="button" onclick="nameList.forEach(Alphabetical)">Alphabetical order</button>
+            <script>
+                Alpha = document.getElementById("Unorder");
+                const nameList = ["Shrek,"," Donkey,"," Princess Fiona,", " Puss in Boots,", " Gingerbread Man"];
+                const Alphabetical = () => {
+                    //$("#Unorder").html(nameList)
+                }
+            </script>
+        </body>
+    </html>

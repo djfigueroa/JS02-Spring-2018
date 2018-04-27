@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+        </head>
+        <body>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/0/08/EmpireStateNewYokCity.jpg" width="350" id="NYC"/>
+            <img src="https://media-cdn.tripadvisor.com/media/photo-s/03/9b/2f/47/boston.jpg" width="350" id="Boston"/>
+            <p id="text"></p>
+            <h1>NYC Counter</h1>
+            <p id="Nyc"></p>
+            <h1>Boston Counter</h1>
+            <p id="BOSTON"></p>
+            <script>
+                let counterNYC = 0;
+                let counterBoston = 0;
+                $("#NYC").on("click", () => {
+                    $("#text").html("New York is awesome!")
+                    counterNYC = counterNYC + 1;
+                    document.getElementById("Nyc").innerHTML = counterNYC;
+                });
+                $("#Boston").on("click", () => {
+                    $("#text").html("Boston is cool!")
+                    counterBoston = counterBoston + 1;
+                    document.getElementById("BOSTON").innerHTML = counterBoston;
+                });
+            </script>
+        </body>
+    </html>

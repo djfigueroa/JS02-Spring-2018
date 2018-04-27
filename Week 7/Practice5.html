@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+        </head>
+
+        <body>
+            <input type="radio" name="radioPlace" id="NYC" value="nyc">
+            <label for="radioButton">New York</label>
+            <input type="radio" name="radioPlace" id="Bostonian" value="bost">
+            <label for="radioButton">Boston</label>
+            <p><span id="myName"></span></p>
+            <button type="button">Click Me!</button>
+            <script>
+                $("button").click(() => {
+                    if ($('input[radioPlace=NYC]:checked').length > 0){
+                        $("span#myName").html("New York is awesome!")
+                    } 
+                    else if ($('input[radioPlace=Bostonian]:checked').length > 0) {
+                        $("span#myName").html("Boston is cool!") 
+                    }
+                });
+            </script>
+        </body>
+    </html>
